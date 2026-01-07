@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Perusahaan | BNI Simpan Pinjam</title>
+
+    <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=32&h=32&auto=format&fit=crop" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+      :root {
+        --bni-teal: #005e6a;
+        --bni-orange: #f15a22;
+        --bni-dark: #004a54;
+        --light-bg: #f8f9fa;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--light-bg);
+        color: #333;
+      }
+
+      /* --- NAVBAR --- */
+      .navbar-bni {
+        background-color: white !important;
+        border-bottom: 4px solid var(--bni-orange);
+        padding: 10px 0;
+      }
+
+      .navbar-brand h1 {
+        color: var(--bni-teal);
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin: 0;
+      }
+
+      .nav-link {
+        color: var(--bni-teal) !important;
+        font-weight: 600;
+      }
+
+      .nav-link:hover {
+        color: var(--bni-orange) !important;
+      }
+
+      /* --- BREADCRUMB / HEADER --- */
+      .profile-header {
+        background: linear-gradient(rgba(0, 74, 84, 0.8), rgba(0, 94, 106, 0.8)), url("https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1500&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+        padding: 80px 0;
+        color: white;
+        text-align: center;
+      }
+
+      /* --- CONTENT SECTION --- */
+      .about-img {
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .vision-mission-card {
+        border-left: 5px solid var(--bni-orange);
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        height: 100%;
+      }
+
+      .history-section {
+        background-color: white;
+        padding: 60px 0;
+      }
+
+      /* --- TEAM SECTION --- */
+      .team-card {
+        text-align: center;
+        padding: 30px;
+        background: white;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+
+      .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .team-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid var(--bni-teal);
+      }
+
+      /* --- FOOTER --- */
+      footer {
+        background-color: var(--bni-dark);
+        color: white;
+        padding: 50px 0 20px;
+        border-top: 6px solid var(--bni-orange);
+      }
+
+      .footer-bni-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid var(--bni-orange);
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bni sticky-top shadow-sm animate__animated animate__fadeInDown">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=100&h=100&auto=format&fit=crop" alt="BNI Logo" width="40" height="40" class="me-2 rounded-circle" />
+          <h1 class="mb-0">BNI <span style="color: var(--bni-orange)">Profil</span></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="profil.html" class="nav-link active">Profil</a></li>
+            <li class="nav-item"><a href="data.html" class="nav-link">Data</a></li>
+            <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            <li class="nav-item ms-lg-3"><a href="login.html" class="btn btn-outline-warning btn-sm" style="color: var(--bni-orange); border-color: var(--bni-orange)">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="profile-header">
+      <div class="container animate__animated animate__fadeIn">
+        <h2 class="display-5 fw-bold">Tentang Kami</h2>
+        <p class="lead">Mengenal lebih dekat dedikasi BNI Simpan Pinjam dalam melayani negeri.</p>
+      </div>
+    </header>
+
+    <section class="container my-5 py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 animate__animated animate__fadeInLeft">
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1000&auto=format&fit=crop" class="about-img" alt="Interior Office BNI" />
+        </div>
+        <div class="col-lg-6 animate__animated animate__fadeInRight">
+          <h3 class="fw-bold text-teal" style="color: var(--bni-teal)">Sejarah Kami</h3>
+          <p>
+            BNI Simpan Pinjam berawal dari komitmen untuk memberikan kemudahan akses finansial bagi seluruh lapisan masyarakat. Terinspirasi dari semangat Bank Negara Indonesia, kami hadir sebagai solusi perbankan mikro yang mengedepankan
+            kepercayaan dan integritas.
+          </p>
+          <p>Hingga saat ini, kami terus berinovasi dalam teknologi perbankan untuk memastikan setiap transaksi Anda aman, cepat, dan transparan.</p>
+          <div class="mt-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="bi bi-check-circle-fill text-orange me-3" style="color: var(--bni-orange)"></i>
+              <span>Melayani lebih dari 100 unit di seluruh pelosok.</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-orange me-3" style="color: var(--bni-orange)"></i>
+              <span>Keamanan dana yang dijamin secara profesional.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container py-4">
+        <div class="row g-4 text-center">
+          <div class="col-md-6 animate__animated animate__fadeInUp">
+            <div class="vision-mission-card">
+              <i class="bi bi-eye-fill fs-1" style="color: var(--bni-teal)"></i>
+              <h4 class="fw-bold mt-3">Visi Kami</h4>
+              <p class="text-muted">Menjadi mitra keuangan pilihan utama yang memberikan nilai tambah secara berkelanjutan bagi masyarakat Indonesia.</p>
+            </div>
+          </div>
+          <div class="col-md-6 animate__animated animate__fadeInUp delay-1s">
+            <div class="vision-mission-card">
+              <i class="bi bi-rocket-takeoff-fill fs-1" style="color: var(--bni-teal)"></i>
+              <h4 class="fw-bold mt-3">Misi Kami</h4>
+              <p class="text-muted">Menyediakan layanan simpan pinjam yang inovatif, meningkatkan literasi keuangan, dan mendukung pertumbuhan ekonomi mikro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 py-5">
+      <div class="text-center mb-5">
+        <h3 class="fw-bold">Manajemen Kami</h3>
+        <p class="text-muted">Dikelola oleh tenaga profesional dan berpengalaman.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&auto=format&fit=crop" class="team-img" alt="Leader 1" />
+            <h5 class="fw-bold mb-1">M. Andriyansah</h5>
+            <p class="text-orange small fw-bold" style="color: var(--bni-orange)">Direktur Utama</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&auto=format&fit=crop" class="team-img" alt="Leader 2" />
+            <h5 class="fw-bold mb-1">Siti Aminah</h5>
+            <p class="text-orange small fw-bold" style="color: var(--bni-orange)">Manajer Operasional</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&h=200&auto=format&fit=crop" class="team-img" alt="Leader 3" />
+            <h5 class="fw-bold mb-1">Budi Santoso</h5>
+            <p class="text-orange small fw-bold" style="color: var(--bni-orange)">Kepala Keuangan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <footer class="text-center">
+
+        <h5 class="fw-bold mb-2">BNI Simpan Pinjam</h5>
+        <p class="small opacity-75 mb-4 px-md-5">Kantor Pusat: Gedung BNI, Jl. Jend. Sudirman Kav. 1, Jakarta Pusat.</p>
+
+        <div class="d-flex justify-content-center gap-4 mb-4">
+          <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <hr class="bg-light opacity-25" />
+        <p class="small opacity-50 mb-1">&copy; 2026 BNI Simpan Pinjam. Semua Hak Dilindungi.</p>
+        <p class="small opacity-50 fw-bold">By: M.Andriyansah</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
